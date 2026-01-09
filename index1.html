@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Talha Makhdoom">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--For Mobile And Windows View Like Responsiveness-->
+    <!--
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="John Doe">
+    -->
+    <link rel="stylesheet" href="index1.css">
+    <title>Document</title>
+
+    <script>
+        function myFunction() {
+            document.getElementById("zen").innerHTML = "Welcome Back!";
+        }
+    </script>
+
+
+</head>
+<body>
+    <h1 style="text-align: center;">Id In HTML</h1>
+    <h2 id="C4">Go To Previous</h2>
+    <a href="index.html">Jump To Previous File</a>
+    <br>
+    <h2 id="messsage">Hello! I'm Talha Makhdoom</h2>
+    <p>We are accessing specific id with the help of Javascript</p>
+    <button onclick="displayResult()">Click Me</button>
+    <script>
+        function displayResult(){
+            document.getElementById("messsage").innerHTML="Thanks For Talking To Me. Have A Nice Day!"
+        }
+    </script>
+    <hr>
+    <h2 style="text-align: center;">Buttons</h2>
+    <button class="testbutton">Green Button</button>
+    <button disabled class="testbutton1">Disabled Button</button>   <!--Use To Disable Button-->
+    <button onclick="alert('Sure! You Wanna Go Back To Previous?')" class="testbutton2">Java Button</button>
+    <hr>
+    <h2 style="text-align: center;">Form Using Buttons</h2>
+    <form action="/action_page.php">
+        First Name: <input type="text" name="fname">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+    <hr>
+    <h2 style="text-align: center;">Iframe Syntax</h2> 
+    <iframe src="index1.html" title="HTML File" style="width: 1300px; height: 300px; border: 2px solid red;">Iframe</iframe>
+    <br>
+    <iframe src="demo_iframe.htm" style="width: 1300px; height: 300px; border: none;" title="iframe_example"></iframe>
+    <br>
+    <h2 style="text-align: center;">Iframe - Target for a Link</h2>
+    <iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example" style="width: 1300px; height: 300px;"></iframe>
+    <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+    <hr>
+    <h2 style="text-align: center;">My First JavaScript</h2>
+    <p id="demo"></p>   <!--Through Javascript we can add text, color, fontsize, background, image using src-->
+    <img src="" alt="Shopping Bag" id="image">
+    <script>   
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        document.getElementById("demo").style.fontSize = "25px";  
+        document.getElementById("demo").style.color = "red";
+        document.getElementById("demo").style.background = "yellow";
+        document.getElementById("image").src = "imagepedia.png"
+    </script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    <br>
+    <br>
+    <hr>
+    <!-- <img src="https://www.w3schools.com/images/picture.jpg" alt="">
+    <hr>
+    <p id="zen">Click Me</p>
+    <button onclick="myFunction()" type="button">Try It</button> -->
+    
+    <section class="stn">
+    <h2 style="text-align: center;">HTML Layout Elements and Techniques</h2>
+    <h2>CSS Layout Float</h2>
+    <p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
+    <p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+    <header>
+        <h2>Cities</h2>
+    </header>
+    <div>
+        <nav>
+            <ul>
+            <li><a href="">Paris</a></li>
+            <li><a href="">London</a></li>
+            <li><a href="">Tokyo</a></li>
+            </ul>
+        </nav>
+
+    <article>
+        <h1>London</h1>
+        <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+        <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+    </article>
+    <footer class="fot">
+        <p>Footer</p>
+    </footer>
+    </div>
+    </section>
+    <hr>
+    <section>
+        <h2 style="text-align: center;">Responsive Images</h2>
+        <img src="imagebag.jpg" alt="Shopping Bag" style="width: 100%;">
+        <br>
+        <h2 style="text-align: center;">Using the max-width Property</h2>
+        <img src="imagebag.jpg" alt="Shopping Bag" style="max-width: 100%; height: auto;">
+        <br>
+        <h2 style="text-align: center;">Show Different Images Using Picture</h2>
+        <picture>
+            <source srcset="imageinsta.jpg" media="(max-width: 600px)">
+            <source srcset="imagepedia.png" media="(max-width: 1500px)">
+            <source srcset="imagebag.jpg">
+            <img src="pole.jpg" alt="Sky Pole">
+        </picture>
+        <br>
+        <h2 style="text-align: center;">Responsive Text Size</h2>
+        <p>The text size can be set with a "vw" unit, which means the "viewport width". Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.:</p>
+        <p style="font-size: 4vw;">Resize the browser window to see how the text size scales.</p>
+        <p style="font-size: 6vw;">Resize the browser window to see how the text size scales.</p>
+        <p style="font-size: 8vw;">Resize the browser window to see how the text size scales.</p>
+        <p style="font-size: 10vw;">Resize the browser window to see how the text size scales.</p>
+        <br>
+        <br>
+        <h2 style="text-align: center;">Media Queries</h2>
+        <p>Resize the browser window.</p>
+        <p>Make sure you reach the breakpoint at 800px when resizing this frame.</p>
+        <div class="left">
+            <p>Left Menu</p>
+        </div>
+        <div class="main">
+            <p>Main Menu</p>
+        </div>
+        <div class="right">
+            <p>Right Menu</p>
+        </div>
+    </section>
+    <hr>
+    <hr>
+    <section class="givemargintop">
+        <div style="background-color: #e5e5e5; padding: 15px; text-align: center;">
+            <h1>Hello World</h1>
+        </div>
+        <div style="overflow: auto;">
+            <div class="menu">
+                <a href="">Link 1</a>
+                <a href="">Link 2</a>
+                <a href="">Link 3</a>
+                <a href="">Link 4</a>
+            </div>
+            <div class="mane">
+                <h2>Lorum Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            </div>
+            <div class="rite">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+        </div>
+        <div style="background-color: #e5e5e5; text-align: center; padding: 10px; margin-top: 7px;">
+            Â© copyright w3schools.com
+        </div>
+        <br>
+        <div class="w3-green">
+            <h1>W3Schools Demo</h1>
+            <p>Resize this responsive page!</p>
+        </div>
+
+        <div class="row-padding">
+            <div class="w3-third">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>It is the most populous city in the United Kingdom,
+               with a metropolitan area of over 13 million inhabitants.</p>
+        </div>
+
+            <div class="w3-third">
+            <h2>Paris</h2>
+            <p>Paris is the capital of France.</p>
+            <p>The Paris area is one of the largest population centers in Europe,
+               with more than 12 million inhabitants.</p>
+        </div>
+
+        <div class="w3-third">
+            <h2>Tokyo</h2>
+            <p>Tokyo is the capital of Japan.</p>
+            <p>It is the center of the Greater Tokyo Area,
+               and the most populous metropolitan area in the world.</p>
+        </div>
+     </div>
+
+    </section>
+    
+    
+    
+
+    
+    
+
+
+</body>
+</html>
